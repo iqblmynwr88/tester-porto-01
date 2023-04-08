@@ -20,7 +20,7 @@ function Quote() {
       />
       <span className={clsx('flex flex-col')}>
         <span className={clsx('leading-[1.15]')}>
-          <em>Beautiful</em>{' '}
+          <em>We are a</em>{' '}
         </span>
         <span
           className={clsx('flex items-center gap-2 leading-[1.15]', 'lg:gap-4')}
@@ -39,16 +39,16 @@ function Quote() {
                 'dark:text-slate-300'
               )}
             >
-              inside
+              Professional
             </strong>{' '}
-            and{' '}
+            PoS{' '}
             <strong
               className={clsx(
                 'font-extrabold text-slate-600',
                 'dark:text-slate-300'
               )}
             >
-              out{' '}
+              Validator{' '}
             </strong>
           </span>
           <span
@@ -60,7 +60,7 @@ function Quote() {
           />
         </span>
         <span className={clsx('leading-[1.15]')}>
-          is a{' '}
+          Stake with{' '}
           <strong
             className={clsx(
               'relative font-extrabold text-slate-600',
@@ -74,7 +74,7 @@ function Quote() {
                 'dark:bg-slate-800'
               )}
             />
-            must.
+            us.
           </strong>
         </span>
       </span>

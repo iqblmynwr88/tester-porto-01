@@ -70,9 +70,9 @@ function HeaderTitle() {
         >
           I&apos;m{' '}
           <strong className={clsx('text-accent-600', 'dark:text-accent-500')}>
-            Enji
+            NodeX
           </strong>{' '}
-          Kusnadi,{' '}
+          Capital,{' '}
         </m.span>
         <m.h1
           className={clsx(
@@ -84,17 +84,17 @@ function HeaderTitle() {
           animate={animation.show}
           transition={{ delay: 0.3 }}
         >
-          <span className={clsx('lowercase')}>A</span>{' '}
+          <span className={clsx('lowercase')}>I am</span>{' '}
           <strong
             className={clsx(
               'font-bold lowercase text-slate-700',
               'dark:text-slate-300'
             )}
           >
-            Front-End Developer
+            an independent 
           </strong>{' '}
-          who loves intuitive,{' '}
-          <span className={clsx('block')}>clean and modern UI design.</span>
+          node runner for blockchain projects,{' '}
+          <span className={clsx('block mt-5 italic text-sm')}>&quot;Independent means that it is run by blockchain geeks for blockchain and crypto enthusiasts just like you ❤️.</span><span className={clsx('block italic text-sm')}>No VCs or institutional support.We indeed care about keeping the stake decentralized.&quot;</span>
         </m.h1>
       </span>
     </div>
