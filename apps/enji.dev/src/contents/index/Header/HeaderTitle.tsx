@@ -68,7 +68,7 @@ function HeaderTitle() {
           animate={animation.show}
           transition={{ delay: 0.2 }}
         >
-          I&apos;m{' '}
+          We are{' '}
           <strong className={clsx('text-accent-600', 'dark:text-accent-500')}>
             NodeX
           </strong>{' '}
@@ -84,17 +84,9 @@ function HeaderTitle() {
           animate={animation.show}
           transition={{ delay: 0.3 }}
         >
-          <span className={clsx('lowercase')}>I am</span>{' '}
-          <strong
-            className={clsx(
-              'font-bold lowercase text-slate-700',
-              'dark:text-slate-300'
-            )}
-          >
-            an independent 
-          </strong>{' '}
-          node runner for blockchain projects,{' '}
-          <span className={clsx('block mt-5 italic text-sm')}>&quot;Independent means that it is run by blockchain geeks for blockchain and crypto enthusiasts just like you ❤️.</span><span className={clsx('block italic text-sm')}>No VCs or institutional support.We indeed care about keeping the stake decentralized.&quot;</span>
+          <span className={clsx('capitalize')}>We offer a <strong className={clsx('text-accent-600', 'dark:text-accent-500')}>staking service</strong> that helps investors grow their cryptocurrency investments.</span>
+          <span className={clsx('capitalize')}>Our technology allows for secure and reliable staking, with <strong className={clsx('text-accent-600', 'dark:text-accent-500')}>high uptime and advanced monitoring</strong>. We are always here to help and provide support.</span>{' '}
+          <span className={clsx('block mt-5 italic')}>&quot;Non-Custodial Staking Provider. Get more from stacking&quot;</span>
         </m.h1>
       </span>
     </div>

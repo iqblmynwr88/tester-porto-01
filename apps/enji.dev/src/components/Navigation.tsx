@@ -11,10 +11,11 @@ import NavLogo from '@/components/navigations/NavLogo';
 import useOnScroll from '@/hooks/useOnScroll';
 
 const workLinks = [
-  { title: 'Skills & Tools', href: '/work/skills-and-tools' },
-  { title: 'Experience', href: '/work/experience' },
-  { title: 'Studio', href: '/work/studio' },
-  { title: 'Contact', href: '/work/contact' },
+  { title: 'Blog', href: '/work/skills-and-tools' },
+  { title: 'Stake', href: '/work/experience' },
+  { title: 'Explorer', href: '/work/studio' },
+  { title: 'Testnet', href: '/work/contact' },
+  { title: 'Team', href: '/blog' },
 ];
 
 function Navbar() {
@@ -37,34 +38,26 @@ function Navbar() {
         )}
       />
       <div className={clsx('h-2', [isScrolled === true && ['-mt-2']])} />
-      <div className={clsx('content-wrapper-max')}>
+      <div className={clsx('content-wrapper-max justify-items-end')}>
         <div
           className={clsx(
             'relative z-50 flex h-16 items-center justify-between px-2 text-sm',
-            'md:px-4'
+            'md:px-5'
           )}
         >
-          <nav className={clsx('flex', 'md:gap-5' ,'justify-between')} data-accent="violet">
+          <nav className={clsx('flex', 'md:gap-2')} data-accent="violet">
             <NavLogo href="/" title="Home" />
-            <ul className={clsx('flex justify-end', 'md:gap-1')}>
-              <li>
-                <NavLink title="Projects" href="/projects" />
-              </li>
-              <li>
-                <NavLink title="Blog" href="/blog" />
-              </li>
-              <li>
-                <NavLink title="T.I.L" href="/today-i-learned" />
-              </li>
-              <li className={clsx('lg:hidden')} data-accent="blue">
-                <NavLinkDropdown title="Work" items={workLinks} />
-              </li>
-              <li className={clsx('hidden lg:block')} data-accent="blue">
-                <NavLinkExpanded title="Work" items={workLinks} />
-              </li>
-            </ul>
           </nav>
-          <ul className={clsx('flex items-center')}>
+          <ul className={clsx('flex justify-items-end', 'md:gap-2')}>
+            <li>
+              <NavLink title="Home" href="/projects" />
+            </li>
+            <li className={clsx('lg:hidden')} data-accent="blue">
+              <NavLinkDropdown title="Work" items={workLinks} />
+            </li>
+            <li className={clsx('left-96 hidden lg:block')} data-accent="blue">
+              <NavLinkExpanded title="Work" items={workLinks} />
+            </li>
             <li className={clsx('hidden', 'sm:block')}>
               <NavIcon
                 href="https://twitter.com/enjidev"

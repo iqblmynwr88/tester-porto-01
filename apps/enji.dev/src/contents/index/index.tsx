@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 
-import { CodeIcon, HeartIcon, SparklesIcon } from '@/components/Icons';
+import { CodeIcon, HeartIcon, InfoIcon } from '@/components/Icons';
 
 import CleanIntuitive from '@/contents/index/CleanIntuitive';
 import DetailOriented from '@/contents/index/DetailOriented';
@@ -21,11 +21,11 @@ function FeaturedCardSection() {
                 'dark:bg-amber-900'
               )}
             >
-              <SparklesIcon className={clsx('h-5 w-5 text-white')} />
+              <InfoIcon className={clsx('h-5 w-5 text-white')} />
             </div>
           }
-          title="Clean & Intuitive"
-          desc="Keep the UI clean with a modern touch without compromising UX."
+          title="Contribution"
+          desc="We are dedicated to community development with non-profit purpose. Our revenue paid for apps/tools development and maintainence cost."
         />
         <FeaturedCard
           icon={
@@ -38,8 +38,8 @@ function FeaturedCardSection() {
               <HeartIcon className={clsx('h-5 w-5 text-white')} />
             </div>
           }
-          title="Detail Oriented"
-          desc="Awareness to ease of access, UI consistency, and improved UX."
+          title="Decentralize"
+          desc="Flat modeling and not under control in any groups or entities are our operational mechanisms, You-I We are creating added values for our community altogether"
         />
         <FeaturedCard
           icon={
@@ -52,8 +52,8 @@ function FeaturedCardSection() {
               <CodeIcon className={clsx('h-5 w-5 text-white')} />
             </div>
           }
-          title="Pretty & Optimized"
-          desc="Writing clean code is a top priority while keeping it as optimized as possible."
+          title="Technology"
+          desc="Follow the rules of Cosmos network, providing staking service, building tools, validating cosmos chains, sharing and training those who are interested in is our desire"
         />
       </div>
     </div>
